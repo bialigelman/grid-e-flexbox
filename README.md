@@ -1,2 +1,2 @@
-# grid-e-flexbox
-Avaliação grid e flex-box
+# Avaliação enext: grid e flex-box
+Obs.: Layout responsivo exceto para dispositivos móveis pequenos
