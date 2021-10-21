@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  background-color: #1d1e20;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.header > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+.menu {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+}
+.menu li {
+  list-style-type: none;
+}
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+/* FlexBox */
+section {
+  margin: 0 40px 100px;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: calc(100vw - 80px);
+}
+.flex div {
+  width: calc((100% - 40px) / 3);
+}
+.img-flex {
+  width: 100%;
+}
+.flex div p {
+  text-align: center;
+  padding: 10px;
+}
+/* grid1 */
+.img-grid {
+  width: 100%;
+}
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10px;
+  column-gap: 20px;
+}
+.grid1 > div:nth-child(n + 4) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid1 > div:nth-child(n + 4) p {
+  margin: auto;
+}
+.grid1 > div:first-child p,
+.grid1 > div:nth-child(2) p,
+.grid1 > div:nth-child(3) p {
+  padding: 10px 0;
+}
+
+.grid1 > div:last-child p {
+  text-align: center;
+  padding: 10px 0;
+}
+.grid1 > div.anuncio {
+  grid-column: 1;
+  grid-row: 2 / 5;
+  display: block;
+}
+/* grid2 */
+.grid2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 20px;
+}
+.grid2 > div img {
+  width: 100%;
+}
+.grid2 > div p,
+.grid2 > div h2 {
+  padding: 10px 0;
+}
+.grid2 > div h2 {
+  font-weight: 400;
+  font-size: 16px;
+}
+/* grid3 */
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.grid3 > div img {
+  width: 100%;
+}
+.grid3-item:nth-child(1) {
+  grid-row: 1 / 3;
+}
+.grid3-item {
+  display: grid;
+  column-gap: 10px;
+}
+.grid3-item p {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  color: white;
+  grid-column: 1;
+  grid-row: 2;
+  align-self: end;
+}
+.grid3-item img {
+  grid-column: 1;
+  grid-row: 1/3;
+  align-self: end;
+}
